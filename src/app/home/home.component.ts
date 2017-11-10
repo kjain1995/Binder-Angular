@@ -8,12 +8,19 @@ declare var $:any;
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+ }
 
   ngOnInit() {
+
+
   }
   showModal(){
     $('.large.modal').transition('slide right').modal('show');
+    $('.icon.button')
+      .popup({
+      on: 'click'
+    });
   }
 
 }
